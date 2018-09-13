@@ -1,11 +1,27 @@
+
+
+/* icon fonts */
+@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+
 *
 {
 	box-sizing: border-box;
 }
 
-.main-logo
+/* fonts 
+
+    font-family: 'PT Sans', sans-serif;  //content
+    font-family: 'Ropa Sans', sans-serif;  //content
+    font-family: 'M PLUS Rounded 1c', sans-serif; //menu
+    font-family: 'Quicksand', sans-serif;  //menu
+
+*/
+
+
+
+.main-logo img
 {
-	content:url('../images/Wordably-logo2.png');
+	
 	width:30vw;
 	margin:auto;
 	margin-top:20vh;
@@ -20,9 +36,13 @@
     text-align: center;
     background-color: #c8d0dc;
 	overflow: auto;
+	font-size:17px;
 	
 }
 
+
+  
+/* tabbed container */
 .secondary-container
 {
 	background-color: #fbf8f3;
@@ -35,18 +55,146 @@
 	margin-top:5vh;
 	margin-bottom:20vh;
 	box-sizing: border-box;
+	-webkit-box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.29);
+-moz-box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.29);
+box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.29);
 }
-
-#secondary-container-content
-{
-	position: relative;
-	width:inherit;
-	height:auto;
-	min-height:75%;
-	padding:10%;
-	top:25%;
-	background-color:white;  /* remove background color after finish editing */
-}
+section {
+  display: none;
+background-color: #fbf8f3;
+	width:80vw;
+	font-family:'PT Sans', sans-serif;
 	
+}
+section p
+{
+	padding: 5vh;
+}
+.secondary-container > input {
+  display: none;
+}
+.secondary-container > label {
+	display: inline-block;
+	position:relative;
+	float:left;
+	border: none;
+	cursor: pointer;
+	padding: 2vw;
+	font-size: 1.00em;
+	font-family: 'Quicksand', sans-serif;
+	color: #707070;
+	width:40vw;
+	background-color: #eeeeee;
+	text-align:center;
+	margin-bottom:5vh;
+	
+}
+
+.secondary-container > label:hover {
+  color: #888;
+  cursor: pointer;
+}
+.secondary-container input:checked + label {
+  color: #555;
+  background-color: #fbf8f3;
+
+}
+/* link tab with content */
+#tab1:checked ~ #content1, #tab2:checked ~ #content2{
+  display: block;
+}
 
 
+
+/* form */
+
+.form-container {
+    position:relative;
+  background:none;
+  width:90%;
+  margin:auto;
+}
+.form-container label:before
+{
+  font-family: fontawesome;
+  font-weight: normal;
+  margin-right: 3px;
+}
+.form-container label[for*='username']:before
+{
+  content: '\f007';
+}
+.form-container label[for*='password']:before
+{
+  content: '\f023';
+}
+.form-container label[for*='email']:before
+{
+  content: '\f0e0';
+}
+.form-container label
+{
+  display: inline-block;
+  color:grey;
+	margin:auto;
+
+}
+.form-container input[type=text], select {
+   position:relative;
+    padding: 1vh;
+    margin: 8px 2px;
+    display: inline-block;
+    border:none;
+    background:none;
+     margin-left:5px;
+    
+}
+.form-container input[placeholder]
+{
+  font-size:0.882em;
+}
+.form-container input[type=text]:focus
+{
+	border-bottom: 1px solid black;
+  
+}
+.form-container input[type=submit] {
+  width:inherit;
+    background-color: #4CAF50;
+    color: white;
+    padding: 2%;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  font-size:0.882em;
+}
+
+.form-container input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+.row
+{
+   width: 90%;
+  display:inline-block;
+  font-family: 'PT Sans', sans-serif;
+	font-size: 1.176em;
+	text-align:left;
+
+}
+
+@media screen and (max-width: 650px) {
+.container
+	{
+		font-size: 15px;
+		
+	}
+}
+@media screen and (max-width: 400px) {
+.container
+	{
+		font-size: 13px;
+		
+	}
+}

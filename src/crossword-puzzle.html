@@ -7,26 +7,81 @@
 	
 <!-- font awesome -->
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/regular.css" integrity="sha384-ZlNfXjxAqKFWCwMwQFGhmMh3i89dWDnaFU2/VZg9CvsMGA7hXHQsPIqS+JIAmgEq" crossorigin="anonymous">
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/fontawesome.css" integrity="sha384-1rquJLNOM3ijoueaaeS5m+McXPJCGdr5HcA03/VHXxcp2kX2sUrQDmFc3jR5i/C7" crossorigin="anonymous">	
+<script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js" integrity="sha384-kW+oWsYx3YpxvjtZjFXqazFpA7UP/MbiY4jvs+RWZo2+N94PFZ36T6TFkc9O3qoB" crossorigin="anonymous"></script>
 	
-
+<!-- fonts -->
+	<link href="https://fonts.googleapis.com/css?family=PT+Sans|Quicksand:500|Ropa+Sans" rel="stylesheet"> 
+	
+	
 <!-- stylesheet -->
 <link rel="stylesheet" href="css/main.css"/>
+	
+<!-- Javascript -->
+<script src="js/menuTabNavigation.js"></script>
+
 	
 </head>
 	
 <body>
 	
 	<div class="container">
-	<div class="main-logo"></div>
-		<div class="secondary-container">
-			<div id="secondary-container-content">
-			
-			
-			</div> <!-- end of secondary-container-content -->
+	<div class="main-logo"><img src="images/Wordably-logo2.png"/></div>
 		
-		</div> <!-- end of secondary-container -->
-	
+		<div class="secondary-container">
+		<input id="tab1" type="radio" name="tabs" checked>
+  <label for="tab1">SIGN IN</label>
+    
+  <input id="tab2" type="radio" name="tabs">
+  <label for="tab2">SIGN UP</label>
+    
+  
+    <!--sign in content -->
+  <section id="content1">
+    <p>
+      <div class="form-container">
+<form action="/action_page.php">
+  <div class="row">
+  <label for="username"></label>
+    <input type="text" id="username" name="username" placeholder="Username"></div>
+
+    <div class="row">
+    <label for="password"></label>
+    <input type="text" id="password" name="password" placeholder="Password">
+  
+      <div class="row">
+      <input type="submit" value="Log in"></div>
+  </div>
+  </form>
+</div>
+    </p>
+  </section>
+    
+		<!-- sign up content -->
+  <section id="content2">
+    <p>
+       <div class="form-container">
+<form action="/action_page.php">
+   <div class="row">
+  <label for="email"></label>
+    <input type="text" id="email" name="email" placeholder="Email"></div>
+  <div class="row">
+  <label for="username"></label>
+    <input type="text" id="usernameregister" name="usernameregister" placeholder="Username"></div>
+    <div class="row">
+    <label for="password"></label>
+    <input type="text" id="passwordregister" name="passwordregister" placeholder="Password">
+  </div>
+      <div class="row">
+      <input type="submit" value="Register"></div>
+  </div>
+  </form>
+</div> 
+    </p>
+  </section>
+    
+		
+		
+	</div>
 	</div> <!-- end of container -->
 
 	

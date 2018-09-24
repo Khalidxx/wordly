@@ -20,8 +20,16 @@ export default class Puzzle extends Component {
         let boxes = [];
         for (i = 0; i < 100; i++) {
             var fill = "";
-            i%3 == 0? fill = "filled": fill = "empty";
-            boxes.push(<div key={i} id={"item" + (i + 1)} className={fill}><input id="item1-1" type="text" maxLength="1" /></div>)
+            if(i%3 == 0){
+                fill = "filled";
+                boxes.push(<div key={i} id={"item" + (i + 1)} className={fill}></div>)
+            }
+            else{
+                fill = "empty numbered";
+                boxes.push(<div key={i} id={"item" + (i + 1)} className={fill}><input id="item1-1" type="text" minLength="1" maxLength="1" size="1" /></div>)
+            }
+            
+            
         }
         return boxes;
     }

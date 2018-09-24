@@ -66,3 +66,6 @@ typings/
 
 # Lock file
 package-lock.json
+
+# Database login credentials
+wordly-database-firebase-admin-key.json

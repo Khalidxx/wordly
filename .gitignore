@@ -63,3 +63,6 @@ typings/
 
 # editor configuration
 .vscode
+
+#database login credentials
+wordly-database-firebase-admin-key.json

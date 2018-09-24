@@ -245,6 +245,11 @@ class Crossword(object):
             for c in self.grid[r]:
                 outStr += '%s ' % c
             outStr += '\n'
+        # Open a file
+        fo = open("foo.txt", "w")
+        fo.write(''.join(map(str, self.grid)))
+        # Close opend file
+        fo.close()
         return outStr
  
     def word_find(self): # return solution grid

@@ -5,13 +5,13 @@ import { Button } from 'antd';
 
 import '../CSS/main.css';
 
+import Puzzle from './puzzle';
+
 export default class MainApp extends Component {
     render(){
         return(
             <div className='container'>
-                <h1 className='title'>Welcome to React!</h1>
-                <Button type = 'primary'> Hello </Button>
-                <Button> Goodbye </Button>
+                <Puzzle />
             </div>
         );
     }

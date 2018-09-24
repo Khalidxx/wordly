@@ -64,5 +64,9 @@ typings/
 # editor configuration
 .vscode
 
-#database login credentials
+
+# Lock file
+package-lock.json
+
+# Database credential file
 wordly-database-firebase-admin-key.json

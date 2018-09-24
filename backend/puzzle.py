@@ -245,11 +245,6 @@ class Crossword(object):
             for c in self.grid[r]:
                 outStr += '%s ' % c
             outStr += '\n'
-        # Open a file
-        fo = open("foo.txt", "w")
-        fo.write(''.join(map(str, self.grid)))
-        # Close opend file
-        fo.close()
         return outStr
  
     def word_find(self): # return solution grid
@@ -306,6 +301,11 @@ class Crossword(object):
         outStr = ''
         for word in self.current_word_list:
             outStr += '%d. (%d,%d) %s: %s\n' % (word.number, word.col, word.row, word.down_across(), word.clue )
+        # Open a file
+        fo = open("foo.txt", "a")
+        fo.write(outStr)
+        # Close opend file
+        fo.close()
         return outStr
  
 class Word(object):
@@ -352,6 +352,27 @@ word_list = ['saffron', 'The dried, orange yellow plant used to as dye and as a 
     ['plague', 'A widespread affliction or calamity.'], \
     ['yarn', 'A strand of twisted threads or a long elaborate narrative.'], \
     ['snicker', 'A snide, slightly stifled laugh.']
+
+word_list = ['BOLTON', '''"Our blades are sharp."'''], \
+    ['DAENERYS', 'The Mother of Dragons.'], \
+    ['FLOWERS', 'The surname given to bastards of The Reach.'], \
+    ['GREGOR', 'First name of The Mountain.'], \
+    ['RENLY', 'The first name of the first husband of Margarey Tyrell.'], \
+    ['ELLARIA', 'The paramour of Oberyn Martell.'], \
+    ['CASTAMERE', '''"And so he spoke, and so he spoke: that Lord of _________."'''], \
+    ['DRAGONGLASS', 'The only material known to kill White Walkers.'], \
+    ['VISERION', 'The most gentle of the three dragons.'], \
+    ['RHAEGAR', '''Lyanna Stark's kidnapper.'''], \
+    ['FORRESTER', '''"Iron from Ice."'''], \
+    ['SHAE', 'The deceased lover of Tyrion Lannister.'], \
+    ['OATHBREAKER', 'The title given to Jaime Lannister after assassinating the Mad King.'], \
+    ['JON', 'The bastard son of Ned Stark.'], \
+    ['JOJEN', 'The boy that assisted Bran with the Sight.'], \
+    ['RAVEN', 'The creature Bran searched for to understand more about the Sight.'], \
+    ['BAELISH', 'The house of Littlefinger.'], \
+    ['DORNE', 'The only place where bastards are treated equally.'], \
+    ['ARYA', 'The youngest daughter of the Starks.'], \
+    ['REEK', 'The nickname given to Theon Greyjoy while held captive by Ramsay Bolton.']
  
 a = Crossword(13, 13, '-', 5000, word_list)
 a.compute_crossword(2)

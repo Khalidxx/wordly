@@ -52,14 +52,16 @@ class AddPuzzle(Resource):
     def post(self):
         puzzle_data = request.get_json()
         puzzles = database.child('puzzles')
-        puzzles.update({"1": {
-            "theme": "Game of Thrones", puzzle_data
-        }})
+        puzzles.child(puzzle_data['theme']).set(puzzle_data)
         return {"message": "done"}, 201
 
 class GetPuzzle(Resource):
     def post(self):
         puzzle_data = request.get_json()
+        puzzle = database.child('puzzles').order_by_key().equal_to(puzzle_data['theme']).get()
+
+        return({"puzzle":puzzle}), 200
+
 
         
         

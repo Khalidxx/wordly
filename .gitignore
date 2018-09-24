@@ -63,3 +63,6 @@ typings/
 
 # editor configuration
 .vscode
+
+# Lock file
+package-lock.json

@@ -67,5 +67,6 @@ typings/
 # Lock file
 package-lock.json
 
-# Database login credentials
+
+# Database credential file
 wordly-database-firebase-admin-key.json

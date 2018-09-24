@@ -301,6 +301,11 @@ class Crossword(object):
         outStr = ''
         for word in self.current_word_list:
             outStr += '%d. (%d,%d) %s: %s\n' % (word.number, word.col, word.row, word.down_across(), word.clue )
+        # Open a file
+        fo = open("foo.txt", "a")
+        fo.write(outStr)
+        # Close opend file
+        fo.close()
         return outStr
  
 class Word(object):

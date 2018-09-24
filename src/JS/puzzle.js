@@ -25,7 +25,7 @@ export default class Puzzle extends Component {
                 boxes.push(<div key={i} id={"item" + (i + 1)} className={fill}></div>)
             }
             else{
-                fill = "empty numbered";
+                fill = "empty numbered ";
                 boxes.push(<div key={i} id={"item" + (i + 1)} className={fill}><input id="item1-1" type="text" minLength="1" maxLength="1" size="1" /></div>)
             }
             

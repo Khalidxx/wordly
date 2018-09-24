@@ -310,7 +310,7 @@ class Crossword(object):
  
 class Word(object):
     def __init__(self, word=None, clue=None):
-        self.word = re.sub(r'\s', '', word.lower())
+        self.word = re.sub(r'\s', '', word.upper())
         self.clue = clue
         self.length = len(self.word)
         # the below are set when placed on board
@@ -352,8 +352,8 @@ word_list = ['saffron', 'The dried, orange yellow plant used to as dye and as a 
     ['plague', 'A widespread affliction or calamity.'], \
     ['yarn', 'A strand of twisted threads or a long elaborate narrative.'], \
     ['snicker', 'A snide, slightly stifled laugh.']
-
-word_list = ['BOLTON', '''"Our blades are sharp."'''], \
+    
+game_of_Thrones = ['BOLTON', '''"Our blades are sharp."'''], \
     ['DAENERYS', 'The Mother of Dragons.'], \
     ['FLOWERS', 'The surname given to bastards of The Reach.'], \
     ['GREGOR', 'First name of The Mountain.'], \

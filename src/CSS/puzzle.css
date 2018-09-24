@@ -1,7 +1,7 @@
 #wrapper {
     border:none;
-    width: 300px;
-    height: 300px;
+    width: 406px;
+    height: 406px;
     margin: auto auto;
   }
   
@@ -23,14 +23,14 @@
   .filled {
     width: 28px;
     height: 28px;
-    background: black;
-    border: 1px solid black;
+    background: grey;
+    border: 1px solid grey;
     padding: 0;
     margin: 0;
     float: left;
   }
   
-  .grid-item{
+ /* .grid-item{
     width: 28px;
     height: 28px;
     border: 1px solid black;
@@ -38,7 +38,7 @@
     margin: 0;
     float: left;
     text-align: center;
-  }
+  }*/
   
   .empty {
     width: 28px;
@@ -48,12 +48,12 @@
     margin: 0;
     float: left;
   }
-  .numbered {
+  .numbered input {
     counter-increment: value;
   }
   
-  .numbered:nth-of-type(n)::before {
+ /* .numbered:nth-of-type(n)::before {
     content: counter(value);
     font-size: 10px;
     position: absolute;
-  }
+  }*/

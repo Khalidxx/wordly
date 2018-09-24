@@ -305,7 +305,7 @@ class Crossword(object):
  
 class Word(object):
     def __init__(self, word=None, clue=None):
-        self.word = re.sub(r'\s', '', word.lower())
+        self.word = re.sub(r'\s', '', word.upper())
         self.clue = clue
         self.length = len(self.word)
         # the below are set when placed on board
@@ -347,6 +347,27 @@ word_list = ['saffron', 'The dried, orange yellow plant used to as dye and as a 
     ['plague', 'A widespread affliction or calamity.'], \
     ['yarn', 'A strand of twisted threads or a long elaborate narrative.'], \
     ['snicker', 'A snide, slightly stifled laugh.']
+    
+game_of_Thrones = ['BOLTON', '''"Our blades are sharp."'''], \
+    ['DAENERYS', 'The Mother of Dragons.'], \
+    ['FLOWERS', 'The surname given to bastards of The Reach.'], \
+    ['GREGOR', 'First name of The Mountain.'], \
+    ['RENLY', 'The first name of the first husband of Margarey Tyrell.'], \
+    ['ELLARIA', 'The paramour of Oberyn Martell.'], \
+    ['CASTAMERE', '''"And so he spoke, and so he spoke: that Lord of _________."'''], \
+    ['DRAGONGLASS', 'The only material known to kill White Walkers.'], \
+    ['VISERION', 'The most gentle of the three dragons.'], \
+    ['RHAEGAR', '''Lyanna Stark's kidnapper.'''], \
+    ['FORRESTER', '''"Iron from Ice."'''], \
+    ['SHAE', 'The deceased lover of Tyrion Lannister.'], \
+    ['OATHBREAKER', 'The title given to Jaime Lannister after assassinating the Mad King.'], \
+    ['JON', 'The bastard son of Ned Stark.'], \
+    ['JOJEN', 'The boy that assisted Bran with the Sight.'], \
+    ['RAVEN', 'The creature Bran searched for to understand more about the Sight.'], \
+    ['BAELISH', 'The house of Littlefinger.'], \
+    ['DORNE', 'The only place where bastards are treated equally.'], \
+    ['ARYA', 'The youngest daughter of the Starks.'], \
+    ['REEK', 'The nickname given to Theon Greyjoy while held captive by Ramsay Bolton.']
  
 a = Crossword(13, 13, '-', 5000, word_list)
 a.compute_crossword(2)

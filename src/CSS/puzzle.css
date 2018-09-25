@@ -2,12 +2,30 @@
     border:none;
     width: 406px;
     height: 406px;
-    margin: auto auto;
+    margin: auto;
+    margin-top: 10vw;
   }
   
   div {
     contentEditable: true;  
   }
+
+.row {
+   width: 90%;
+  display:inline-block;
+  font-family: 'PT Sans', sans-serif;
+	font-size: 1.176em;
+	text-align:center;
+
+}
+
+.r-button{
+  background-color: #45a049;
+  color: #fff;
+  margin: 5vw;
+  width: 30vw;
+  height: 10vw;
+}
   
   input[type=text] {
       box-sizing: border-box;
@@ -51,7 +69,21 @@
   .numbered input {
     counter-increment: value;
   }
-  
+  @media only screen and (max-width: 450px) {
+    #wrapper {
+      width: 308px;
+      height: 308px;
+    }
+    .empty {
+      width: 22px;
+      height: 22px;
+    }
+    .filled {
+      width: 22px;
+      height: 22px;
+    }
+    
+  }
  /* .numbered:nth-of-type(n)::before {
     content: counter(value);
     font-size: 10px;

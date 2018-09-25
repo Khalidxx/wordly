@@ -17,10 +17,6 @@
 
 */
 
-#main
-{
-	
-}
 .main-logo img
 {
 	
@@ -658,17 +654,25 @@ display:block;
 }
 .hint-container
 {
-  height:100%;
-  width:40%;
+  height:auto;
+  width:100%;
   border:none;
-  position:absolute;
+  margin-top: 10vw;
+  /* position:absolute;
 right:0;
 	top:0;
   overflow:auto;
-  overflow-y:scroll;
+  overflow-y:scroll; */
 	background-color:white;
 	padding:none;
 	
+}
+
+@media only screen and (max-width: 450px) {
+  .hint-container {
+    width: 100%;
+    height: auto;
+  }
 }
 
 .hint-content

@@ -25,12 +25,12 @@ export default class Settings extends Component {
                                     <div className="radio-main">
 
                                         <label className="radio-container">
-                                            <input type="radio" checked="checked" name="light-theme" />
+                                            <input type="radio" checked="checked" name="theme" />
                                             <span className="checkmark"><span>LIGHT</span></span>
 
                                         </label>
                                         <label className="radio-container">
-                                            <input type="radio" name="dark-theme"/>
+                                            <input type="radio" name="theme"/>
                                             <span className="checkmark"><span>DARK</span></span>
                                         </label>
 

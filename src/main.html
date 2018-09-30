@@ -38,65 +38,66 @@
 				<div class="main-logo"><img src="images/Wordably-logo2.png" alt="logo"/></div>
 
 				<div class="secondary-container">
+					<div class="login-container">
+						<input id="tab1" type="radio" name="tabs" checked="checked">
+						<label for="tab1">SIGN IN</label>
 
-					<input id="tab1" type="radio" name="tabs" checked>
-					<label for="tab1">SIGN IN</label>
+						<input id="tab2" type="radio" name="tabs">
+						<label for="tab2">SIGN UP</label>
+					
 
-					<input id="tab2" type="radio" name="tabs">
-					<label for="tab2">SIGN UP</label>
+						<!--sign in content -->
+						<section id="content1">
+							<p>
+								<div class="form-container">
+									<form action="/action_page.php">
+										<div class="row">
+											<label for="username"></label>
+											<input type="text" id="username" name="username" placeholder="Username">
+										</div>
 
+										<div class="row">
+											<label for="password"></label>
+											<input type="text" id="password" name="password" placeholder="Password">
+										</div>
 
-					<!--sign in content -->
-					<section id="content1">
-						<p>
-							<div class="form-container">
-								<form action="/action_page.php">
-									<div class="row">
-										<label for="username"></label>
-										<input type="text" id="username" name="username" placeholder="Username">
-									</div>
+										<div class="row">
+											<input type="submit" value="Log in" onClick="changeNavigation('2')">
+										</div>
 
-									<div class="row">
-										<label for="password"></label>
-										<input type="text" id="password" name="password" placeholder="Password">
-									</div>
+									</form>
+								</div>
+							</p>
+						</section> <!-- end of sign in content -->
 
-									<div class="row">
-										<input type="submit" value="Log in" onClick="changeNavigation('2')">
-									</div>
+						<!-- sign up content -->
+						<section id="content2">
+							<p>
+								<div class="form-container">
+									<form action="/action_page.php">
+										<div class="row">
+											<label for="email"></label>
+											<input type="text" id="email" name="email" placeholder="Email">
+										</div>
 
-								</form>
-							</div>
-						</p>
-					</section> <!-- end of sign in content -->
+										<div class="row">
+											<label for="username"></label>
+											<input type="text" id="usernameregister" name="usernameregister" placeholder="Username">
+										</div>
 
-					<!-- sign up content -->
-					<section id="content2">
-						<p>
-							<div class="form-container">
-								<form action="/action_page.php">
-									<div class="row">
-										<label for="email"></label>
-										<input type="text" id="email" name="email" placeholder="Email">
-									</div>
+										<div class="row">
+											<label for="password"></label>
+											<input type="text" id="passwordregister" name="passwordregister" placeholder="Password">
+										</div>
 
-									<div class="row">
-										<label for="username"></label>
-										<input type="text" id="usernameregister" name="usernameregister" placeholder="Username">
-									</div>
+										<div class="row">
+											<input type="submit" value="Register" onClick="changeNavigation('2')"></div>
 
-									<div class="row">
-										<label for="password"></label>
-										<input type="text" id="passwordregister" name="passwordregister" placeholder="Password">
-									</div>
-
-									<div class="row">
-										<input type="submit" value="Register" onClick="changeNavigation('2')"></div>
-
-								</form>
-							</div> 
-						</p>
-					</section> <!-- end of sign up content -->
+									</form>
+								</div> 
+							</p>
+						</section> <!-- end of sign up content -->
+					</div>
 
 				</div> <!-- end of secondary container -->
 			</div> <!-- end of container -->

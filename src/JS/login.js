@@ -20,7 +20,7 @@ export default class LogIn extends Component {
 
 				<div className="secondary-container">
 
-					<input id="tab1" type="radio" name="tabs" defaultChecked />
+					<input id="tab1" type="radio" name="tabs" checked="checked" />
 					<label htmlFor="tab1">SIGN IN</label>
 
 					<input id="tab2" type="radio" name="tabs"   />

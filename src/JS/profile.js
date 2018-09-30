@@ -86,8 +86,8 @@ export default class Profile extends Component {
                             </div>
 
                             <div className="tab">
-                                <input id="tab-logout" type="checkbox" name="tabs" />
-                                <label htmlFor="tab-logout">Log out</label>
+                                <input id="tab-logout" type="checkbox" name="tabs"/>
+                                <label htmlFor="tab-logout"><Link to="/" >Log Out</Link></label>
                             </div>
 
                         </div>

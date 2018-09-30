@@ -14,20 +14,18 @@ export default class Stats extends Component {
 
                     <div className="content">
 
+						<div className="stats-content">
+							<div className="level">Level 1
+							</div>
+							<div className="lvl-desc">Novice</div>
+							<div className="points">100pts</div>
 
-                        <div className="stars"></div>
-                        <br />
-                        <div className="level">Level 1
-				</div>
-                        <div className="lvl-desc">Novice</div>
-                        <div className="points">100pts</div>
-
-                        <center>
-                            <div className="pie-chart">
-                                <div id="piechart" style={{ width: "500px" }}></div>
-                            </div>
-                        </center>
-
+							<center>
+								<div className="pie-chart">
+									<div id="piechart" style={{ width: "500px" }}></div>
+								</div>
+							</center>
+						</div>
 
                     </div>
 

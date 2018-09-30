@@ -17,7 +17,7 @@ export default class Settings extends Component {
                         <div className="accordion" style={{marginTop:"20%"}}>
 
                             <div className="tab">
-                                <input id="tab-one" type="checkbox" name="tabs" defaultChecked />
+                                <input id="tab-one" type="checkbox" name="tabs"/>
                                 <label htmlFor="tab-one">Change theme</label>
                                 <div className="tab-content">
 
@@ -30,7 +30,7 @@ export default class Settings extends Component {
 
                                         </label>
                                         <label className="radio-container">
-                                            <input type="radio" name="dark-theme" defaultChecked />
+                                            <input type="radio" name="dark-theme"/>
                                             <span className="checkmark"><span>DARK</span></span>
                                         </label>
 
@@ -41,7 +41,7 @@ export default class Settings extends Component {
 
 
                             <div className="tab">
-                                <input id="tab-two" type="checkbox" name="tabs" defaultChecked />
+                                <input id="tab-two" type="checkbox" name="tabs"/>
                                 <label htmlFor="tab-two">Background music</label>
                                 <div className="tab-content">
                                     {/* <!-- radio options --> */}
@@ -53,7 +53,7 @@ export default class Settings extends Component {
 
                                         </label>
                                         <label className="radio-container">
-                                            <input type="radio" name="bg-music" defaultChecked />
+                                            <input type="radio" name="bg-music" />
                                             <span className="checkmark"><span>OFF</span></span>
                                         </label>
 
@@ -63,7 +63,7 @@ export default class Settings extends Component {
                             </div>
 
                             <div className="tab">
-                                <input id="tab-three" type="checkbox" name="tabs" defaultChecked />
+                                <input id="tab-three" type="checkbox" name="tabs" />
                                 <label htmlFor="tab-three">Sound effects</label>
                                 <div className="tab-content">
                                     {/* <!-- radio options --> */}
@@ -75,7 +75,7 @@ export default class Settings extends Component {
 
                                         </label>
                                         <label className="radio-container">
-                                            <input type="radio" name="sound-effects" defaultChecked />
+                                            <input type="radio" name="sound-effects" />
                                             <span className="checkmark"><span>OFF</span></span>
                                         </label>
 

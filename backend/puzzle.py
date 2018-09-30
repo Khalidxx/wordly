@@ -54,9 +54,7 @@ class Crossword(object):
                     if word not in copy.current_word_list:
                         copy.fit_and_add(word)
                 x += 1
-            #print copy.solution()
-            #print len(copy.current_word_list), len(self.current_word_list), self.debug
-            # buffer the best crossword by comparing placed words
+
             if len(copy.current_word_list) > len(self.current_word_list):
                 self.current_word_list = copy.current_word_list
                 self.grid = copy.grid
@@ -86,9 +84,7 @@ class Crossword(object):
                                 if ((colc - glc) + word.length) <= self.cols: # make sure word doesn't go off of grid
                                     coordlist.append([colc - glc, rowc, 0, rowc + (colc - glc), 0])
                         except: pass
-        # example: coordlist[0] = [col, row, vertical, col + row, score]
-        #print word.word
-        #print coordlist
+
         new_coordlist = self.sort_coordlist(coordlist, word)
         #print new_coordlist
         return new_coordlist
@@ -239,26 +235,6 @@ class Crossword(object):
             pass
         return False
  
-    def solution(self): # return solution grid
-        outStr = ""
-        for r in range(self.rows):
-            for c in self.grid[r]:
-                outStr += '%s ' % c
-            outStr += '\n'
-        return outStr
- 
-    def word_find(self): # return solution grid
-        print("Word_find called")
-        outStr = ""
-        for r in range(self.rows):
-            for c in self.grid[r]:
-                if c == self.empty:
-                    outStr += '%s ' % c # str.lower([random.randint(0,len(str.lower())-1)])
-                else:
-                    outStr += '%s ' % c
-            outStr += '\n'
-        return outStr
- 
     def order_number_words(self): # orders words and applies numbering system to them
         self.current_word_list.sort(key=lambda i: (i.col + i.row))
         count, icount = 1, 1
@@ -301,11 +277,6 @@ class Crossword(object):
         outStr = ''
         for word in self.current_word_list:
             outStr += '%d. (%d,%d) %s: %s\n' % (word.number, word.col, word.row, word.down_across(), word.clue )
-        # Open a file
-        fo = open("foo.txt", "a")
-        fo.write(outStr)
-        # Close opend file
-        fo.close()
         return outStr
  
 class Word(object):
@@ -329,31 +300,47 @@ class Word(object):
         return self.word
  
 ### end class, start execution
- 
-#start_full = float(time.time())
- 
-word_list = ['saffron', 'The dried, orange yellow plant used to as dye and as a cooking spice.'], \
-    ['pumpernickel', 'Dark, sour bread made from coarse ground rye.'], \
-    ['louvre', 'An agent, such as yeast, that cause batter or dough to rise..'], \
-    ['coda', 'Musical conclusion of a movement or composition.'], \
-    ['paladin', 'A heroic champion or paragon of chivalry.'], \
-    ['syncopation', 'Shifting the emphasis of a beat to the normally weak beat.'], \
-    ['albatross', 'A large bird of the ocean having a hooked beek and long, narrow wings.'], \
-    ['harp', 'Musical instrument with 46 or more open strings played by plucking.'], \
-    ['piston', 'A solid cylinder or disk that fits snugly in a larger cylinder and moves under pressure as in an engine.'], \
-    ['caramel', 'A smooth chery candy made from suger, butter, cream or milk with flavoring.'], \
-    ['flower', 'A rock-like deposit of organism skeletons that make up reefs.'], \
-    ['dawn', 'The time of each morning at which daylight begins.'], \
-    ['pitch', 'A resin derived from the sap of various pine trees.'], \
-    ['fjord', 'A long, narrow, deep inlet of the sea between steep slopes.'], \
-    ['lip', 'Either of two fleshy folds surrounding the mouth.'], \
-    ['lime', 'The egg-shaped citrus fruit having a green coloring and acidic juice.'], \
-    ['mist', 'A mass of fine water droplets in the air near or in contact with the ground.'], \
-    ['plague', 'A widespread affliction or calamity.'], \
-    ['yarn', 'A strand of twisted threads or a long elaborate narrative.'], \
-    ['snicker', 'A snide, slightly stifled laugh.']
-    
-game_of_Thrones = ['BOLTON', '''"Our blades are sharp."'''], \
+easy = ['sorry', 'A word used to indicate an apology'], \
+	['ice', 'Water in its solid state'], \
+	['hello', 'Spoken when meeting someone'], \
+	['cower', 'To hide when frightened.'], \
+	['happy', 'A synonym to joy'], \
+	['confusion', 'A state of not understanding and having difficulty understanding'], \
+	['healthy', 'An adjective used to show the body is in a good state'], \
+	['purple', 'A mixture of blue and red together'], \
+	['approach', 'To come closer to someone or something'], \
+	['tamper', 'To manipulate or meddle with something'], \
+	['foreign', 'An indication implying not coming from the country'], \
+	['capsule', 'A tiny container']
+	
+medium = ['subjugate', 'To bring under domination or control, especially by conquest'], \
+	['malnourish', 'A state indicating a lack of nutrients'], \
+	['abhor', 'Regard with disgust and hate'], \
+	['folly', 'Foolishness'], \
+	['vibrant', 'Full of energy and life'], \
+	['resonant', 'Reverberate'], \
+	['abyss', 'A vast chasm'], \
+	['linger', 'To stay around longer than necessary'], \
+	['sycophant', 'An individual that acts obsequiously towards someone important in order to gain advantage'], \
+	['tyrant', 'A cruel and oppressive ruler'], \
+	['tangible', 'Perceptible by touch']
+
+hard = ['REIGN', 'To hold and exercise sovereign power'], \
+	['REIMBURSE', 'To pay back as an equivalent of what has been expended'], \
+	['REIN', 'A step attached to the bit for controlling a horse or other draft-animal'], \
+	['REINSTATE', 'To restore to a former state, station, or authority'], \
+	['REITERATE', 'To say or do again and again'], \
+	['REJOIN', 'To reunite after separation'], \
+	['abrogate', 'Revoke formally'], \
+	['compunction', 'A feeling of deep regret, usually for some misdeed'], \
+	['dogmatic', 'Pertaining to a code of beliefs accepted as authoritative'], \
+	['empirical', 'Derived from experiment and observation rather than theory'], \
+	['inveterate', 'Habitual'], \
+	['maudlin', 'Effusively or insincerely emotional'], \
+	['noxious', 'Injurious to physical or mental health'], \
+	['tome', 'A large, scholarly book']
+	
+got = ['BOLTON', '''"Our blades are sharp."'''], \
     ['DAENERYS', 'The Mother of Dragons.'], \
     ['FLOWERS', 'The surname given to bastards of The Reach.'], \
     ['GREGOR', 'First name of The Mountain.'], \
@@ -374,11 +361,22 @@ game_of_Thrones = ['BOLTON', '''"Our blades are sharp."'''], \
     ['ARYA', 'The youngest daughter of the Starks.'], \
     ['REEK', 'The nickname given to Theon Greyjoy while held captive by Ramsay Bolton.']
  
+# Choose which word list is wanted
+
+choice = input("Enter Easy, Medium or Hard: ")
+
+if choice == "Easy":
+	word_list = easy
+
+elif choice == "Medium":
+	word_list = medium
+ 
+else:
+	word_list = hard
+
 a = Crossword(13, 13, '-', 5000, word_list)
 a.compute_crossword(2)
 print(a.word_bank())
-print(a.solution())
-print(a.word_find())
 print(a.display())
 print(a.legend())
 print(len(a.current_word_list), 'out of', len(word_list))

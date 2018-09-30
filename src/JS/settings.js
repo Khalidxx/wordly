@@ -92,10 +92,10 @@ export default class Settings extends Component {
                     <div className="footer">
                         <div className="icon-grid">
                             <ul>
-                            <Link to="/Puzzle"><li className="play" id="clicked" >Play</li></Link>
+                            <Link to="/Puzzle"><li className="play"  >Play</li></Link>
                                 <Link to="/Profile"><li className="profile">Profile</li></Link>
                                 <Link to="/Stats"><li className="stats" >Stats</li></Link>
-                                <Link to="/Settings"><li className="settings" >Settings</li></Link>
+                                <Link to="/Settings"><li className="settings" id="clicked" >Settings</li></Link>
                             </ul>
                         </div>
                     </div>

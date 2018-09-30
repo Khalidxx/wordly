@@ -654,15 +654,13 @@ display:block;
 }
 .hint-container
 {
-  height:auto;
+  height:70%;
   width:100%;
   border:none;
   margin-top: 10vw;
-  /* position:absolute;
-right:0;
-	top:0;
+
   overflow:auto;
-  overflow-y:scroll; */
+  overflow-y:scroll; 
 	background-color:white;
 	padding:none;
 	

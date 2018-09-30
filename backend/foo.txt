@@ -176,3 +176,17 @@ Request:
     "theme": "Game of Thrones"
 }
 
+1. (1,1) across: Dark, sour bread made from coarse ground rye.
+1. (1,1) down: A heroic champion or paragon of chivalry.
+2. (3,1) down: A mass of fine water droplets in the air near or in contact with the ground.
+3. (3,3) across: A snide, slightly stifled laugh.
+4. (9,1) down: A smooth chery candy made from suger, butter, cream or milk with flavoring.
+5. (4,6) across: A widespread affliction or calamity.
+6. (5,5) down: A rock-like deposit of organism skeletons that make up reefs.
+7. (3,8) across: The time of each morning at which daylight begins.
+8. (2,10) across: A long, narrow, deep inlet of the sea between steep slopes.
+9. (12,1) down: An agent, such as yeast, that cause batter or dough to rise..
+10. (9,7) across: Either of two fleshy folds surrounding the mouth.
+11. (11,7) down: A solid cylinder or disk that fits snugly in a larger cylinder and moves under pressure as in an engine.
+12. (9,9) down: Musical conclusion of a movement or composition.
+13. (8,12) across: A strand of twisted threads or a long elaborate narrative.

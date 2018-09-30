@@ -49,12 +49,12 @@ export default class Puzzle extends Component {
                 <div className="container-2">
                     <div className="header"><div className="logo-small"><img src="./src/images/Wordably-logo2-w.png" className="logo" alt="logo" /></div></div>
 
-                    <div className="content">
-                        <div id="wrapper" className="puzzle">
-                            {this.returnBoxes()}
-                        </div>
+                    <div className="hint-container">
+                        <div className="content">
+                            <div id="wrapper" className="puzzle">
+                                {this.returnBoxes()}
+                            </div>
 
-                        <div className="hint-container">
                             <div className="hint-content">
                                 <div className="hint-title">Hints</div>
                                 <ol>
@@ -78,7 +78,7 @@ export default class Puzzle extends Component {
                         </div>
                         <Link to="/Results">
                             <div className="row">
-                                <input className = "r-button" type="submit" value="Submit" onClick={this.doNothing} />
+                                <input className="r-button" type="submit" value="Submit" onClick={this.doNothing} />
                             </div>
                         </Link>
 

@@ -140,7 +140,7 @@ Request:
 {
 	"puzzle": [["o", "a", "t", "h", "b", "r", "e", "a", "k", "e", "r", "-", "-"],["-", "-", "-", "-", "a", "-", "-", "-", "-", "-", "-", "-", "-"],["f", "l", "o", "w", "e", "r", "s", "-", "r", "e", "e", "k", "-"],["-", "-", "-", "-", "l", "-", "-", "-", "-", "l", "-", "-", "-"],["-", "-", "-", "-", "i", "-", "r", "e", "n", "l", "y", "-", "-"],["s", "-", "-", "-", "s", "-", "-", "-", "-", "a", "-", "-", "-"],["h", "-", "-", "r", "h", "a", "e", "g", "a", "r", "-", "-", "-"],["a", "r", "y", "a", "-", "-", "-", "r", "-", "i", "-", "-", "-"],["e", "-", "-", "v", "-", "-", "-", "e", "-", "a", "-", "-", "-"],["-", "j", "-", "e", "-", "-", "-", "g", "-", "-", "-", "-", "-"],["d", "o", "r", "n", "e", "-", "j", "o", "j", "e", "n", "-", "-"],["-", "n", "-", "-", "-", "-", "-", "r", "-", "-", "-", "-", "-"],["-", "-", "-", "-", "-", "-", "-", "-", "-", "-", "-", "-", "-"]],
 	"hints": ["1. (1,1) across: The title given to Jaime Lannister after assassinating the Mad King.",
-		"2. (1,5) across: Lyanna Stark's kidnapper.",
+		"2. (1,5) across: Lyanna Stark"s kidnapper.",
 		"3. (4,3) across: The house of Littlefinger.",
 		"4. (7,1) down: The paramour of Oberyn Martell.",
 		"5. (1,7) across: The only place where bastards are treated equally.",
@@ -153,6 +153,7 @@ Request:
 		"12. (11,5) down: The Mother of Dragons.",
 		"13. (9,8) across: The bastard son of Ned Stark.",
 		"14. (5,12) across: The surname given to bastards of The Reach."],
+
 	"wordsAndHints": [["BOLTON", "Our blades are sharp."],
     ["DAENERYS", "The Mother of Dragons."],
     ["FLOWERS", "The surname given to bastards of The Reach."],
@@ -162,7 +163,7 @@ Request:
     ["CASTAMERE", "And so he spoke, and so he spoke: that Lord of _________."],
     ["DRAGONGLASS", "The only material known to kill White Walkers."],
     ["VISERION", "The most gentle of the three dragons."],
-    ["RHAEGAR", "Lyanna Stark's kidnapper."],
+    ["RHAEGAR", "Lyanna Stark"s kidnapper."],
     ["FORRESTER", "Iron from Ice."],
     ["SHAE", "The deceased lover of Tyrion Lannister."],
     ["OATHBREAKER", "The title given to Jaime Lannister after assassinating the Mad King."],
@@ -175,6 +176,7 @@ Request:
     ["REEK", "The nickname given to Theon Greyjoy while held captive by Ramsay Bolton."]],
     "theme": "Game of Thrones"
 }
+
 
 1. (1,1) across: Dark, sour bread made from coarse ground rye.
 1. (1,1) down: A heroic champion or paragon of chivalry.
@@ -190,3 +192,97 @@ Request:
 11. (11,7) down: A solid cylinder or disk that fits snugly in a larger cylinder and moves under pressure as in an engine.
 12. (9,9) down: Musical conclusion of a movement or composition.
 13. (8,12) across: A strand of twisted threads or a long elaborate narrative.
+
+
+{
+	"puzzle": [["o", "a", "t", "h", "b", "r", "e", "a", "k", "e", "r", "-", "-"],["-", "-", "-", "-", "a", "-", "-", "-", "-", "-", "-", "-", "-"],["f", "l", "o", "w", "e", "r", "s", "-", "r", "e", "e", "k", "-"],["-", "-", "-", "-", "l", "-", "-", "-", "-", "l", "-", "-", "-"],["-", "-", "-", "-", "i", "-", "r", "e", "n", "l", "y", "-", "-"],["s", "-", "-", "-", "s", "-", "-", "-", "-", "a", "-", "-", "-"],["h", "-", "-", "r", "h", "a", "e", "g", "a", "r", "-", "-", "-"],["a", "r", "y", "a", "-", "-", "-", "r", "-", "i", "-", "-", "-"],["e", "-", "-", "v", "-", "-", "-", "e", "-", "a", "-", "-", "-"],["-", "j", "-", "e", "-", "-", "-", "g", "-", "-", "-", "-", "-"],["d", "o", "r", "n", "e", "-", "j", "o", "j", "e", "n", "-", "-"],["-", "n", "-", "-", "-", "-", "-", "r", "-", "-", "-", "-", "-"],["-", "-", "-", "-", "-", "-", "-", "-", "-", "-", "-", "-", "-"]],
+	"hints": ["1. (1,1) across: The title given to Jaime Lannister after assassinating the Mad King.",
+		"2. (1,5) across: Lyanna Stark"s kidnapper.",
+		"3. (4,3) across: The house of Littlefinger.",
+		"4. (7,1) down: The paramour of Oberyn Martell.",
+		"5. (1,7) across: The only place where bastards are treated equally.",
+		"6. (5,5) down: First name of The Mountain.",
+		"7. (3,7) down: The first name of the first husband of Margarey Tyrell.",
+		"8. (1,9) down: The deceased lover of Tyrion Lannister.",
+		"9. (1,11) across: The youngest daughter of the Starks.",
+		"10. (5,10) across: The creature Bran searched for to understand more about the Sight.",
+		"11. (9,6) down: The boy that assisted Bran with the Sight.",
+		"12. (11,5) down: The Mother of Dragons.",
+		"13. (9,8) across: The bastard son of Ned Stark.",
+		"14. (5,12) across: The surname given to bastards of The Reach."],
+		
+	"wordsAndHints": [["BOLTON", "Our blades are sharp."],
+    ["DAENERYS", "The Mother of Dragons."],
+    ["FLOWERS", "The surname given to bastards of The Reach."],
+    ["GREGOR", "First name of The Mountain."],
+    ["RENLY", "The first name of the first husband of Margarey Tyrell."],
+    ["ELLARIA", "The paramour of Oberyn Martell."],
+    ["CASTAMERE", "And so he spoke, and so he spoke: that Lord of _________."],
+    ["DRAGONGLASS", "The only material known to kill White Walkers."],
+    ["VISERION", "The most gentle of the three dragons."],
+    ["RHAEGAR", "Lyanna Stark"s kidnapper."],
+    ["FORRESTER", "Iron from Ice."],
+    ["SHAE", "The deceased lover of Tyrion Lannister."],
+    ["OATHBREAKER", "The title given to Jaime Lannister after assassinating the Mad King."],
+    ["JON", "The bastard son of Ned Stark."],
+    ["JOJEN", "The boy that assisted Bran with the Sight."],
+    ["RAVEN", "The creature Bran searched for to understand more about the Sight."],
+    ["BAELISH", "The house of Littlefinger."],
+    ["DORNE", "The only place where bastards are treated equally."],
+    ["ARYA", "The youngest daughter of the Starks."],
+    ["REEK", "The nickname given to Theon Greyjoy while held captive by Ramsay Bolton."]],
+    "theme": "Game of Thrones"
+}
+
+{
+	"puzzle": [["C", "O", "N", "F", "U", "S", "I", "O", "N", "-", "-", "-", "-"],["A", "-", "-", "O", "-", "-", "-", "-", "-", "-", "-", "-", "-"],["P", "-", "-", "R", "-", "-", "-", "-", "-", "-", "-", "-", "-"],["S", "-", "H", "E", "A", "L", "T", "H", "Y", "-", "-", "-", "-"],["U", "-", "-", "I", "-", "-", "A", "-", "-", "H", "-", "-", "-"],["L", "-", "-", "G", "-", "-", "M", "-", "-", "A", "-", "H", "-"],["E", "-", "-", "N", "-", "-", "P", "U", "R", "P", "L", "E", "-"],["-", "-", "-", "-", "C", "-", "E", "-", "-", "P", "-", "L", "-"],["-", "-", "-", "S", "O", "R", "R", "Y", "-", "Y", "-", "L", "-"],["-", "-", "-", "-", "W", "-", "-", "-", "-", "-", "-", "O", "-"],["-", "-", "I", "C", "E", "-", "-", "-", "-", "-", "-", "-", "-"],["-", "-", "-", "-", "R", "-", "-", "-", "-", "-", "-", "-", "-"],["-", "-", "-", "-", "-", "-", "-", "-", "-", "-", "-", "-", "-"]],
+	"hints": ["1. (1,1) across: A state of not understanding and having difficulty understanding",
+		"1. (1,1) down: A tiny container",
+		"2. (4,1) down: An indication implying not coming from the country",
+		"3. (3,4) across: An adjective used to show the body is in a good state",
+		"4. (7,4) down: To manipulate or meddle with something",
+		"5. (4,9) across: A word used to indicate an apology",
+		"6. (5,8) down: To hide when frightened.",
+		"7. (3,11) across: Water in its solid state",
+		"8. (7,7) across: A mixture of blue and red together",
+		"9. (10,5) down: A synonym to joy",
+		"10. (12,6) down: Spoken when meeting someone"],
+	"theme": "Common1",
+	"difficulty": "easy"
+
+}
+
+
+{
+	"puzzle": [["M", "-", "-", "-", "-", "-", "-", "S", "-", "-", "-", "-", "-"],["A", "B", "Y", "S", "S", "-", "T", "Y", "R", "A", "N", "T", "-"],["L", "-", "-", "-", "-", "-", "-", "C", "-", "-", "-", "-", "-"],["N", "-", "-", "-", "R", "E", "S", "O", "N", "A", "N", "T", "-"],["O", "-", "-", "-", "-", "-", "-", "P", "-", "-", "-", "A", "-"],["U", "-", "-", "-", "-", "-", "-", "H", "-", "-", "-", "N", "-"],["R", "-", "-", "V", "I", "B", "R", "A", "N", "T", "-", "G", "-"],["I", "-", "A", "-", "-", "-", "-", "N", "-", "-", "-", "I", "-"],["S", "U", "B", "J", "U", "G", "A", "T", "E", "-", "-", "B", "-"],["H", "-", "H", "-", "-", "-", "-", "-", "-", "-", "-", "L", "-"],["-", "F", "O", "L", "L", "Y", "-", "-", "-", "-", "-", "E", "-"],["-", "-", "R", "-", "-", "-", "-", "-", "-", "-", "-", "-", "-"],["-", "-", "-", "-", "-", "-", "-", "-", "-", "-", "-", "-", "-"]],
+	"hints": ["1. (1,1) down: A state indicating a lack of nutrients",
+		"2. (1,2) across: A vast chasm",
+		"3. (8,1) down: An individual that acts obsequiously towards someone important in order to gain advantage",
+		"4. (5,4) across: Reverberate",
+		"5. (7,2) across: A cruel and oppressive ruler",
+		"6. (1,9) across: To bring under domination or control, especially by conquest",
+		"7. (4,7) across: Full of energy and life",
+		"8. (3,8) down: Regard with disgust and hate",
+		"9. (2,11) across: Foolishness",
+		"10. (12,4) down: Perceptible by touch"],
+	"theme": "Common2",
+	"difficulty": "Medium"
+}
+
+{
+	"puzzle": [["C", "O", "M", "P", "U", "N", "C", "T", "I", "O", "N", "-", "-"],["-", "-", "-", "-", "-", "-", "-", "-", "N", "-", "O", "-", "-"],["-", "-", "-", "-", "A", "-", "-", "-", "V", "-", "X", "-", "-"],["R", "E", "I", "M", "B", "U", "R", "S", "E", "-", "I", "-", "-"],["E", "-", "-", "-", "R", "-", "E", "-", "T", "-", "O", "-", "-"],["I", "-", "-", "-", "O", "-", "I", "-", "E", "-", "U", "-", "-"],["N", "-", "-", "-", "G", "-", "N", "-", "R", "-", "S", "-", "-"],["-", "-", "R", "-", "A", "-", "S", "-", "A", "-", "-", "-", "-"],["-", "-", "E", "-", "T", "-", "T", "-", "T", "O", "M", "E", "-"],["R", "E", "I", "T", "E", "R", "A", "T", "E", "-", "-", "-", "-"],["-", "-", "G", "-", "-", "-", "T", "-", "-", "-", "-", "-", "-"],["-", "-", "N", "-", "-", "R", "E", "J", "O", "I", "N", "-", "-"],["-", "-", "-", "-", "-", "-", "-", "-", "-", "-", "-", "-", "-"]],
+	"hints": ["1. (1,1) across: A feeling of deep regret, usually for some misdeed",
+		"2. (1,4) across: To pay back as an equivalent of what has been expended",
+		"2. (1,4) down: A step attached to the bit for controlling a horse or other draft-animal",
+		"3. (5,3) down: Revoke formally",
+		"4. (9,1) down: Habitual",
+		"5. (1,10) across: To say or do again and again",
+		"6. (7,4) down: To restore to a former state, station, or authority",
+		"7. (3,8) down: To hold and exercise sovereign power",
+		"8. (11,1) down: Injurious to physical or mental health",
+		"9. (6,12) across: To reunite after separation",
+		"10. (9,9) across: A large, scholarly book"],
+	"theme": "Common3",
+	"difficulty": "hard"
+}
+

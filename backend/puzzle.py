@@ -246,6 +246,18 @@ class Crossword(object):
                 else:
                     count += 1
             icount += 1
+
+    def solution(self): # return solution grid
+        outStr = ""
+        for r in range(self.rows):
+            for c in self.grid[r]:
+                outStr += '%s ' % c
+            outStr += '\n'
+        fo = open("foo.txt", "a")
+        fo.write(''.join(str(e) for e in self.grid))
+        # Close opend file
+        fo.close()
+        return outStr
  
     def display(self, order=True): # return (and order/number wordlist) the grid minus the words adding the numbers
         outStr = ""
@@ -271,12 +283,20 @@ class Crossword(object):
         random.shuffle(temp_list) # randomize word list
         for word in temp_list:
             outStr += '%s\n' % word.word
+        fo = open("foo.txt", "a")
+        fo.write(outStr)
+        # Close opend file
+        fo.close()
         return outStr
  
     def legend(self): # must order first
         outStr = ''
         for word in self.current_word_list:
             outStr += '%d. (%d,%d) %s: %s\n' % (word.number, word.col, word.row, word.down_across(), word.clue )
+        fo = open("foo.txt", "a")
+        fo.write(outStr)
+        # Close opend file
+        fo.close()
         return outStr
  
 class Word(object):
@@ -377,9 +397,7 @@ else:
 a = Crossword(13, 13, '-', 5000, word_list)
 a.compute_crossword(2)
 print(a.word_bank())
+print(a.solution())
 print(a.display())
 print(a.legend())
 print(len(a.current_word_list), 'out of', len(word_list))
-print(a.debug)
-#end_full = float(time.time())
-#print end_full - start_full

@@ -21,10 +21,10 @@ export default class LogIn extends Component {
 				<div className="secondary-container">
 
 					<input id="tab1" type="radio" name="tabs" checked="checked" />
-					<label htmlFor="tab1">SIGN IN</label>
+					<label htmlFor="tab1" id="tab1">SIGN IN</label>
 
-					<input id="tab2" type="radio" name="tabs"   />
-					<label htmlFor="tab2">SIGN UP</label>
+					<input id="tab2" type="radio" name="tabs" />
+					<label htmlFor="tab2" id="tab2">SIGN UP</label>
 
 
 					{/* <!--sign in content --> */}
@@ -38,11 +38,12 @@ export default class LogIn extends Component {
 
 									<div className="row">
 										<label htmlFor="password"></label>
-										<input type="text" id="password" name="password" placeholder="Password" />
+										<input type="text" id="newPassword" name="newPassword" placeholder="Password" />
 									</div>
                                     <Link to="/SelectMode">
 									<div className="row">
 										<input type="submit" value="Log in" onClick={this.doNothing}/>
+										{/* <span className="error">Wrong username or password was entered</span> */}
 									</div>
                                     </Link>
 
@@ -71,7 +72,10 @@ export default class LogIn extends Component {
 									</div>
 
 									<div className="row">
-										<input type="submit" value="Register" onClick={this.doNothing} /></div>
+										<input type="submit" value="Register" onClick={this.doNothing} />
+										<span className="error">Please check fields in red</span>
+									</div>
+									
 
 								</form>
 							</div> 
